@@ -7,12 +7,27 @@ class Carousel extends React.Component {
     var slideIndex = 1;
     showSlides(slideIndex);
     
-
     function plusSlides(n) {
       showSlides((slideIndex += n));
     }
 /*     function currentSlide(n) {
       showSlides((slideIndex = n));
+    } */
+
+    let autoCarrousel=setInterval(() => {
+      plusSlides(1)
+    }, 5000);
+
+    function moveSlide(direccion){
+      clearInterval(autoCarrousel);
+      direccion==="next" ? plusSlides(1) : plusSlides(-1)
+    }
+
+/*     function next(){
+      plusSlides(1)
+    }
+    function prev(){
+      plusSlides(-1)
     } */
 
     function showSlides(n) {
@@ -31,13 +46,11 @@ class Carousel extends React.Component {
     }
     document
       .querySelector(".prev")
-      .addEventListener("click", () => plusSlides(-1));
+      .addEventListener("click", () => moveSlide("prev"));
     document
       .querySelector(".next")
-      .addEventListener("click", () => plusSlides(1));
+      .addEventListener("click", () => moveSlide("next"));
 }
-  
-
   render() {
     return (
       <div className="slideshow-container">

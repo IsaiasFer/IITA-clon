@@ -1,21 +1,25 @@
 .slideshow-container {
   position: relative;
+  margin-top: 8px;
   > * {
     box-sizing: border-box;
   }
   .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 42%;
     width: auto;
     margin-top: -22px;
-    padding: 16px;
-    color: white;
+    color: #777;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 64px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+    background: none;
+    &:hover{
+      color: #26ce61;
+    }
   }
   .next {
     right: 0;
@@ -23,7 +27,9 @@
   }
   .mySlides {
     display: none;
+    height: 450px;
     img {
+      height: 100%;
       width: 100%;
     }
   }
@@ -36,10 +42,6 @@
 /* Position the "next button" to the right */
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
 
 .fade {
   -webkit-animation-name: fade;
