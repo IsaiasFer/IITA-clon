@@ -1,0 +1,20 @@
+.cursosSection{
+    display:flex;
+}
+
+.curso{
+    display: flex;
+    flex-direction:column;
+}
+
+.cursoImgContainer{
+    width: 90%;
+    &:hover{
+        width: 100%;
+    }
+}
+
+.cursoImg{
+    width: 100%;
+    border-radius: 50%;
+}
