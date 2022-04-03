@@ -1,0 +1,55 @@
+.articleSection {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 5em;
+}
+
+.article {
+  box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.84);
+  border-radius: 5px;
+  border-bottom: 3px solid #26ce61;
+  margin: 1em;
+  height: fit-content;
+  &Title {
+    font-size: 20px;
+    color: #26ce61;
+    font-weight: 400;
+    padding: 0 7%;
+    margin: 0.5em 0;
+  }
+  &Info {
+    position: relative;
+  }
+}
+.articleImgContainer {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  .articleImg {
+    width: 98%;
+    padding: 1% 1% 0;
+    height: 10em;
+  }
+}
+
+.description {
+  position: absolute;
+  background: rgba(61, 61, 61, 0.616);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1em;
+  height: 98%;
+  opacity: 0%;
+  transition: .4s;
+  &:hover{
+    opacity: 100%;
+  }
+  p {
+    margin: 0;
+    color: white;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}

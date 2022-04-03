@@ -1,6 +1,7 @@
 .slideshow-container {
   position: relative;
   margin-top: 8px;
+  z-index:2;
   > * {
     box-sizing: border-box;
   }
@@ -17,6 +18,8 @@
     border-radius: 0 3px 3px 0;
     user-select: none;
     background: none;
+    
+    border-style: none;
     &:hover{
       color: #26ce61;
     }
@@ -25,6 +28,7 @@
     right: 0;
     border-radius: 3px 0 0 3px;
   }
+
   .mySlides {
     display: none;
     height: 450px;

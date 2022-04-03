@@ -1,0 +1,42 @@
+.infoCursoDestacado {
+  position: absolute;
+  width: 40%;
+  background: rgb(0 0 0 / 60%);
+  padding: 3em;
+  color: white;
+  transition: .4s;
+  p{
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  h2{
+      font-size: 32px;
+  }
+  &:hover{
+    background: rgb(0 0 0 / 70%);
+  }
+}
+
+.cursoDestacado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+padding: 0 5em;
+height: 24em;
+margin:2em 0 ;
+  &Img {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    img {
+      box-sizing: content-box;
+      width: 100%;
+      box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.84);
+      border-radius: 5px;
+      height: 100%;
+      border-bottom: 3px solid #26ce61;
+     
+    }
+  }
+}
